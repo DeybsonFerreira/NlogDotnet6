@@ -1,0 +1,1748 @@
+2022-05-09 20:48:31.9126 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 20:48:31.9126 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 20:48:31.9126 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 20:48:31.912' (String)
+2022-05-09 20:48:31.9126 Trace   DatabaseTarget: Parameter: '@msg' = 'Application is shutting down...' (String)
+2022-05-09 20:48:31.9126 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 20:48:31.9126 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 20:48:31.9126 Trace   DatabaseTarget: Parameter: '@trace' = 'CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_1 => ConsoleLifetime.OnApplicationStopping' (String)
+2022-05-09 20:48:31.9126 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 20:48:31.9126 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 20:48:31.9126 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 20:48:31.9126 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 20:48:31.9126 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 20:48:31.9352 Debug LogFactory Flush with timeout=15 secs
+2022-05-09 20:48:31.9352 Trace Flushing all 1 targets...
+2022-05-09 20:48:31.9352 Trace ForEachItemInParallel() 1 items
+2022-05-09 20:48:31.9352 Trace Continuation invoked: 
+2022-05-09 20:48:31.9352 Trace Parallel task completed. 0 items remaining
+2022-05-09 20:48:31.9423 Debug Flush completed
+2022-05-09 20:48:31.9423 Info Shutdown() called. Logger closing...
+2022-05-09 20:48:31.9423 Info Closing old configuration.
+2022-05-09 20:48:31.9423 Debug LogFactory Flush with timeout=15 secs
+2022-05-09 20:48:31.9423 Trace Flushing all 1 targets...
+2022-05-09 20:48:31.9423 Trace ForEachItemInParallel() 1 items
+2022-05-09 20:48:31.9423 Trace Continuation invoked: 
+2022-05-09 20:48:31.9423 Trace Parallel task completed. 0 items remaining
+2022-05-09 20:48:31.9423 Debug Flush completed
+2022-05-09 20:48:31.9423 Debug Closing logging configuration...
+2022-05-09 20:48:31.9423 Trace Closing Database Target[database]
+2022-05-09 20:48:31.9423 Debug Closing target 'Database Target[database]'.
+2022-05-09 20:48:31.9423 Trace DatabaseTarget(Name=database): Close connection because of CloseTarget
+2022-05-09 20:48:31.9423 Debug Closed target 'Database Target[database]'.
+2022-05-09 20:48:31.9423 Trace Closing '
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '
+2022-05-09 20:48:31.9423 Trace Closing Layout Renderer: ${literal}
+2022-05-09 20:48:31.9423 Trace Closing '${var:connectionString}'
+2022-05-09 20:48:31.9423 Trace Closing Layout Renderer: ${var}
+2022-05-09 20:48:31.9423 Trace Closing '.'
+2022-05-09 20:48:31.9423 Trace Closing Layout Renderer: ${literal}
+2022-05-09 20:48:31.9423 Trace Closing '${date}'
+2022-05-09 20:48:31.9423 Trace Closing Layout Renderer: ${date}
+2022-05-09 20:48:31.9423 Trace Closing '${message}'
+2022-05-09 20:48:31.9423 Trace Closing Layout Renderer: ${message}
+2022-05-09 20:48:31.9423 Trace Closing '${level}'
+2022-05-09 20:48:31.9423 Trace Closing Layout Renderer: ${level}
+2022-05-09 20:48:31.9423 Trace Closing '${exception}'
+2022-05-09 20:48:31.9575 Trace Closing Layout Renderer: ${exception}
+2022-05-09 20:48:31.9575 Trace Closing '${stacktrace}'
+2022-05-09 20:48:31.9575 Trace Closing Layout Renderer: ${stacktrace}
+2022-05-09 20:48:31.9575 Trace Closing '${logger}'
+2022-05-09 20:48:31.9575 Trace Closing Layout Renderer: ${logger}
+2022-05-09 20:48:31.9575 Trace Closing '${aspnet-request-url}'
+2022-05-09 20:48:31.9575 Trace Closing Layout Renderer: ${aspnet-request-url}
+2022-05-09 20:48:31.9575 Debug Finished closing logging configuration.
+2022-05-09 20:48:31.9575 Debug Stopping file watching for path 'C:\GIT\NlogDotnet6\bin\Debug\net6.0' filter 'NLog.config'
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: Program
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: Microsoft.Hosting.Lifetime
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: NlogDotnet6
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.BadRequests
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Connections
+2022-05-09 20:48:31.9575 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Http2
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Http3
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.TypeForwardingActivator
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Hosting.Diagnostics
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointMiddleware
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+2022-05-09 20:48:31.9728 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: NlogDotnet6.Controllers.HomeController
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Routing.EndpointRoutingUrlHelper
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper
+2022-05-09 20:48:31.9886 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper
+2022-05-09 20:48:31.9886 Info Logger has been closed down.
+2022-05-09 20:48:31.9886 Info AppDomain Shutting down. Logger closing...
+2022-05-09 20:48:31.9886 Info Logger has been shut down.
+2022-05-09 22:16:32.1965 Info Message Template Auto Format enabled
+2022-05-09 22:16:32.2052 Info Loading assembly: NLog.Web.AspNetCore
+2022-05-09 22:16:32.2052 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-09 22:16:32.2212 Debug Setting 'NLog.Targets.DatabaseTarget.commandText' to '
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '
+2022-05-09 22:16:32.2212 Debug Setting 'NLog.Targets.DatabaseTarget.name' to 'database'
+2022-05-09 22:16:32.2212 Debug Setting 'NLog.Targets.DatabaseTarget.connectionString' to '${var:connectionString}'
+2022-05-09 22:16:32.2212 Debug Setting 'NLog.LayoutRenderers.VariableLayoutRenderer.Name' to 'connectionString'
+2022-05-09 22:16:32.2212 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.2212 Trace Scanning VariableLayoutRenderer 'Layout Renderer: ${var}'
+2022-05-09 22:16:32.2212 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@datetime'
+2022-05-09 22:16:32.2212 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${date}'
+2022-05-09 22:16:32.2339 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.2339 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2022-05-09 22:16:32.2339 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@msg'
+2022-05-09 22:16:32.2339 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${message}'
+2022-05-09 22:16:32.2339 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.2339 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-09 22:16:32.2339 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@level'
+2022-05-09 22:16:32.2339 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${level}'
+2022-05-09 22:16:32.2339 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.2339 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-09 22:16:32.2339 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@exception'
+2022-05-09 22:16:32.2339 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${exception}'
+2022-05-09 22:16:32.2497 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.2497 Trace Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2022-05-09 22:16:32.2497 Trace  Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2022-05-09 22:16:32.2497 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@trace'
+2022-05-09 22:16:32.2497 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${stacktrace}'
+2022-05-09 22:16:32.2497 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.2497 Trace Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2022-05-09 22:16:32.2497 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@logger'
+2022-05-09 22:16:32.2497 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${logger}'
+2022-05-09 22:16:32.2497 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.2497 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-05-09 22:16:32.2497 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@url'
+2022-05-09 22:16:32.2497 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${aspnet-request-url}'
+2022-05-09 22:16:32.2497 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.2497 Trace Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2022-05-09 22:16:32.2497 Info Adding target DatabaseTarget(Name=database)
+2022-05-09 22:16:32.2497 Debug Registered target database: NLog.Targets.DatabaseTarget
+2022-05-09 22:16:32.2497 Trace ParseRulesElement
+2022-05-09 22:16:32.2780 Debug Watching path 'C:\GIT\NlogDotnet6\bin\Debug\net6.0' filter 'NLog.config' for changes.
+2022-05-09 22:16:32.2780 Debug --- NLog configuration dump ---
+2022-05-09 22:16:32.2806 Debug Targets:
+2022-05-09 22:16:32.2806 Debug Database Target[database]
+2022-05-09 22:16:32.2806 Debug Rules:
+2022-05-09 22:16:32.2806 Debug logNamePattern: (:All) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ database ]
+2022-05-09 22:16:32.2806 Debug --- End of NLog configuration dump ---
+2022-05-09 22:16:32.2806 Trace FindReachableObject<System.Object>:
+2022-05-09 22:16:32.2806 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ database ]'
+2022-05-09 22:16:32.2806 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-09 22:16:32.2806 Trace  Scanning DatabaseTarget 'Database Target[database]'
+2022-05-09 22:16:32.2806 Trace   Scanning Property CommandText ''
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '' NLog.Layouts
+2022-05-09 22:16:32.2806 Trace   Scanning SimpleLayout ''
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            ''
+2022-05-09 22:16:32.2806 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.2806 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-09 22:16:32.2806 Trace   Scanning Property ConnectionString ''${var:connectionString}'' NLog.Layouts
+2022-05-09 22:16:32.2806 Trace   Scanning SimpleLayout ''${var:connectionString}''
+2022-05-09 22:16:32.2806 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.2806 Trace    Scanning VariableLayoutRenderer 'Layout Renderer: ${var}'
+2022-05-09 22:16:32.2806 Trace   Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic
+2022-05-09 22:16:32.2806 Trace   Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic
+2022-05-09 22:16:32.2806 Trace   Scanning Property DBHost ''.'' NLog.Layouts
+2022-05-09 22:16:32.2806 Trace   Scanning SimpleLayout ''.''
+2022-05-09 22:16:32.2806 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.2806 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-09 22:16:32.2806 Trace   Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic
+2022-05-09 22:16:32.2806 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.2806 Trace    Scanning Property Layout ''${date}'' NLog.Layouts
+2022-05-09 22:16:32.2806 Trace    Scanning SimpleLayout ''${date}''
+2022-05-09 22:16:32.2806 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.2806 Trace     Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2022-05-09 22:16:32.2806 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.2806 Trace    Scanning Property Layout ''${message}'' NLog.Layouts
+2022-05-09 22:16:32.2806 Trace    Scanning SimpleLayout ''${message}''
+2022-05-09 22:16:32.2806 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.2806 Trace     Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-09 22:16:32.2972 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.2972 Trace    Scanning Property Layout ''${level}'' NLog.Layouts
+2022-05-09 22:16:32.2972 Trace    Scanning SimpleLayout ''${level}''
+2022-05-09 22:16:32.2972 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.2972 Trace     Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-09 22:16:32.2972 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.2972 Trace    Scanning Property Layout ''${exception}'' NLog.Layouts
+2022-05-09 22:16:32.2972 Trace    Scanning SimpleLayout ''${exception}''
+2022-05-09 22:16:32.2972 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.2972 Trace     Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2022-05-09 22:16:32.2972 Trace      Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2022-05-09 22:16:32.2972 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.2972 Trace    Scanning Property Layout ''${stacktrace}'' NLog.Layouts
+2022-05-09 22:16:32.2972 Trace    Scanning SimpleLayout ''${stacktrace}''
+2022-05-09 22:16:32.2972 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.2972 Trace     Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2022-05-09 22:16:32.2972 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.2972 Trace    Scanning Property Layout ''${logger}'' NLog.Layouts
+2022-05-09 22:16:32.2972 Trace    Scanning SimpleLayout ''${logger}''
+2022-05-09 22:16:32.2972 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.2972 Trace     Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-05-09 22:16:32.2972 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.3116 Trace    Scanning Property Layout ''${aspnet-request-url}'' NLog.Layouts
+2022-05-09 22:16:32.3116 Trace    Scanning SimpleLayout ''${aspnet-request-url}''
+2022-05-09 22:16:32.3116 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3116 Trace     Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2022-05-09 22:16:32.3116 Trace   Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic
+2022-05-09 22:16:32.3116 Trace   Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic
+2022-05-09 22:16:32.3116 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-09 22:16:32.3116 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-09 22:16:32.3116 Info Validating config: TargetNames=database, ConfigItems=29, FilePath=C:\GIT\NlogDotnet6\bin\Debug\net6.0\NLog.config
+2022-05-09 22:16:32.3116 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-09 22:16:32.3116 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-09 22:16:32.3116 Trace Initializing Layout Renderer: ${aspnet-request-url}
+2022-05-09 22:16:32.3116 Trace Initializing '${aspnet-request-url}'
+2022-05-09 22:16:32.3294 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.3294 Trace Scanning SimpleLayout ''${aspnet-request-url}''
+2022-05-09 22:16:32.3294 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3294 Trace  Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2022-05-09 22:16:32.3294 Trace Initializing Layout Renderer: ${logger}
+2022-05-09 22:16:32.3294 Trace Initializing '${logger}'
+2022-05-09 22:16:32.3294 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.3294 Trace Scanning SimpleLayout ''${logger}''
+2022-05-09 22:16:32.3294 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3294 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-05-09 22:16:32.3294 Trace Initializing Layout Renderer: ${stacktrace}
+2022-05-09 22:16:32.3294 Trace Initializing '${stacktrace}'
+2022-05-09 22:16:32.3294 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.3294 Trace Scanning SimpleLayout ''${stacktrace}''
+2022-05-09 22:16:32.3294 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3294 Trace  Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2022-05-09 22:16:32.3294 Trace Initializing Layout Renderer: ${exception}
+2022-05-09 22:16:32.3294 Trace Initializing '${exception}'
+2022-05-09 22:16:32.3294 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.3294 Trace Scanning SimpleLayout ''${exception}''
+2022-05-09 22:16:32.3294 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3294 Trace  Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2022-05-09 22:16:32.3427 Trace   Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2022-05-09 22:16:32.3427 Trace Initializing Layout Renderer: ${level}
+2022-05-09 22:16:32.3427 Trace Initializing '${level}'
+2022-05-09 22:16:32.3427 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.3427 Trace Scanning SimpleLayout ''${level}''
+2022-05-09 22:16:32.3427 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3427 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-09 22:16:32.3427 Trace Initializing Layout Renderer: ${message}
+2022-05-09 22:16:32.3427 Trace Initializing '${message}'
+2022-05-09 22:16:32.3427 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.3427 Trace Scanning SimpleLayout ''${message}''
+2022-05-09 22:16:32.3427 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3427 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-09 22:16:32.3427 Trace Initializing Layout Renderer: ${date}
+2022-05-09 22:16:32.3427 Trace Initializing '${date}'
+2022-05-09 22:16:32.3427 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.3427 Trace Scanning SimpleLayout ''${date}''
+2022-05-09 22:16:32.3427 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3427 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2022-05-09 22:16:32.3427 Trace Initializing Layout Renderer: ${literal}
+2022-05-09 22:16:32.3427 Trace Initializing '.'
+2022-05-09 22:16:32.3427 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.3427 Trace Scanning SimpleLayout ''.''
+2022-05-09 22:16:32.3427 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3587 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-09 22:16:32.3587 Trace Initializing Layout Renderer: ${var}
+2022-05-09 22:16:32.3587 Trace Initializing '${var:connectionString}'
+2022-05-09 22:16:32.3587 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.3587 Trace Scanning SimpleLayout ''${var:connectionString}''
+2022-05-09 22:16:32.3587 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3587 Trace  Scanning VariableLayoutRenderer 'Layout Renderer: ${var}'
+2022-05-09 22:16:32.3587 Trace Initializing Layout Renderer: ${literal}
+2022-05-09 22:16:32.3587 Trace Initializing '
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '
+2022-05-09 22:16:32.3587 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.3587 Trace Scanning SimpleLayout ''
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            ''
+2022-05-09 22:16:32.3587 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.3587 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-09 22:16:32.3587 Trace Initializing Database Target[database]
+2022-05-09 22:16:32.3587 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-09 22:16:32.3587 Trace Scanning DatabaseTarget 'Database Target[database]'
+2022-05-09 22:16:32.3587 Trace  Scanning Property CommandText ''
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '' NLog.Layouts
+2022-05-09 22:16:32.3587 Trace  Scanning SimpleLayout ''
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            ''
+2022-05-09 22:16:32.3587 Trace  Scanning Property ConnectionString ''${var:connectionString}'' NLog.Layouts
+2022-05-09 22:16:32.3587 Trace  Scanning SimpleLayout ''${var:connectionString}''
+2022-05-09 22:16:32.3587 Trace  Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic
+2022-05-09 22:16:32.3587 Trace  Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic
+2022-05-09 22:16:32.3587 Trace  Scanning Property DBHost ''.'' NLog.Layouts
+2022-05-09 22:16:32.3751 Trace  Scanning SimpleLayout ''.''
+2022-05-09 22:16:32.3751 Trace  Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic
+2022-05-09 22:16:32.3751 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.3751 Trace   Scanning Property Layout ''${date}'' NLog.Layouts
+2022-05-09 22:16:32.3751 Trace   Scanning SimpleLayout ''${date}''
+2022-05-09 22:16:32.3751 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.3751 Trace   Scanning Property Layout ''${message}'' NLog.Layouts
+2022-05-09 22:16:32.3751 Trace   Scanning SimpleLayout ''${message}''
+2022-05-09 22:16:32.3751 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.3751 Trace   Scanning Property Layout ''${level}'' NLog.Layouts
+2022-05-09 22:16:32.3751 Trace   Scanning SimpleLayout ''${level}''
+2022-05-09 22:16:32.3751 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.3751 Trace   Scanning Property Layout ''${exception}'' NLog.Layouts
+2022-05-09 22:16:32.3751 Trace   Scanning SimpleLayout ''${exception}''
+2022-05-09 22:16:32.3751 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.3751 Trace   Scanning Property Layout ''${stacktrace}'' NLog.Layouts
+2022-05-09 22:16:32.3751 Trace   Scanning SimpleLayout ''${stacktrace}''
+2022-05-09 22:16:32.3751 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.3751 Trace   Scanning Property Layout ''${logger}'' NLog.Layouts
+2022-05-09 22:16:32.3751 Trace   Scanning SimpleLayout ''${logger}''
+2022-05-09 22:16:32.3751 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:16:32.3751 Trace   Scanning Property Layout ''${aspnet-request-url}'' NLog.Layouts
+2022-05-09 22:16:32.3751 Trace   Scanning SimpleLayout ''${aspnet-request-url}''
+2022-05-09 22:16:32.3899 Trace  Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic
+2022-05-09 22:16:32.3899 Trace  Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic
+2022-05-09 22:16:32.3899 Trace Database Target[database] has 10 layouts
+2022-05-09 22:16:32.3899 Debug Targets for Program by level:
+2022-05-09 22:16:32.3899 Debug Trace => database
+2022-05-09 22:16:32.3899 Debug Debug => database
+2022-05-09 22:16:32.3899 Debug Info => database
+2022-05-09 22:16:32.3899 Debug Warn => database
+2022-05-09 22:16:32.4057 Debug Error => database
+2022-05-09 22:16:32.4057 Debug Fatal => database
+2022-05-09 22:16:32.4704 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-09 22:16:32.5277 Debug Hide assemblies for callsite
+2022-05-09 22:16:32.5277 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-09 22:16:32.5349 Debug Targets for Microsoft.Extensions.Hosting.Internal.ApplicationLifetime by level:
+2022-05-09 22:16:32.5349 Debug Trace => database
+2022-05-09 22:16:32.5349 Debug Debug => database
+2022-05-09 22:16:32.5349 Debug Info => database
+2022-05-09 22:16:32.5349 Debug Warn => database
+2022-05-09 22:16:32.5349 Debug Error => database
+2022-05-09 22:16:32.5349 Debug Fatal => database
+2022-05-09 22:16:32.5349 Debug Targets for Microsoft.Extensions.Hosting.Internal.Host by level:
+2022-05-09 22:16:32.5349 Debug Trace => database
+2022-05-09 22:16:32.5349 Debug Debug => database
+2022-05-09 22:16:32.5349 Debug Info => database
+2022-05-09 22:16:32.5349 Debug Warn => database
+2022-05-09 22:16:32.5349 Debug Error => database
+2022-05-09 22:16:32.5349 Debug Fatal => database
+2022-05-09 22:16:32.5349 Debug Targets for Microsoft.Hosting.Lifetime by level:
+2022-05-09 22:16:32.5349 Debug Trace => database
+2022-05-09 22:16:32.5349 Debug Debug => database
+2022-05-09 22:16:32.5349 Debug Info => database
+2022-05-09 22:16:32.5349 Debug Warn => database
+2022-05-09 22:16:32.5349 Debug Error => database
+2022-05-09 22:16:32.5349 Debug Fatal => database
+2022-05-09 22:16:32.5349 Debug Targets for NlogDotnet6 by level:
+2022-05-09 22:16:32.5349 Debug Trace => database
+2022-05-09 22:16:32.5349 Debug Debug => database
+2022-05-09 22:16:32.5349 Debug Info => database
+2022-05-09 22:16:32.5466 Debug Warn => database
+2022-05-09 22:16:32.5466 Debug Error => database
+2022-05-09 22:16:32.5466 Debug Fatal => database
+2022-05-09 22:16:32.5466 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer by level:
+2022-05-09 22:16:32.5466 Debug Trace => database
+2022-05-09 22:16:32.5466 Debug Debug => database
+2022-05-09 22:16:32.5466 Debug Info => database
+2022-05-09 22:16:32.5620 Debug Warn => database
+2022-05-09 22:16:32.5620 Debug Error => database
+2022-05-09 22:16:32.5620 Debug Fatal => database
+2022-05-09 22:16:32.5620 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware by level:
+2022-05-09 22:16:32.5620 Debug Trace => database
+2022-05-09 22:16:32.5620 Debug Debug => database
+2022-05-09 22:16:32.5620 Debug Info => database
+2022-05-09 22:16:32.5620 Debug Warn => database
+2022-05-09 22:16:32.5620 Debug Error => database
+2022-05-09 22:16:32.5620 Debug Fatal => database
+2022-05-09 22:16:32.5620 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2022-05-09 22:16:32.5620 Debug Trace => database
+2022-05-09 22:16:32.5620 Debug Debug => database
+2022-05-09 22:16:32.5620 Debug Info => database
+2022-05-09 22:16:32.5620 Debug Warn => database
+2022-05-09 22:16:32.5620 Debug Error => database
+2022-05-09 22:16:32.5620 Debug Fatal => database
+2022-05-09 22:16:32.5620 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.BadRequests by level:
+2022-05-09 22:16:32.5620 Debug Trace => database
+2022-05-09 22:16:32.5620 Debug Debug => database
+2022-05-09 22:16:32.5620 Debug Info => database
+2022-05-09 22:16:32.5620 Debug Warn => database
+2022-05-09 22:16:32.5620 Debug Error => database
+2022-05-09 22:16:32.5620 Debug Fatal => database
+2022-05-09 22:16:32.5620 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Connections by level:
+2022-05-09 22:16:32.5620 Debug Trace => database
+2022-05-09 22:16:32.5620 Debug Debug => database
+2022-05-09 22:16:32.5620 Debug Info => database
+2022-05-09 22:16:32.5620 Debug Warn => database
+2022-05-09 22:16:32.5620 Debug Error => database
+2022-05-09 22:16:32.5620 Debug Fatal => database
+2022-05-09 22:16:32.5620 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Http2 by level:
+2022-05-09 22:16:32.5620 Debug Trace => database
+2022-05-09 22:16:32.5620 Debug Debug => database
+2022-05-09 22:16:32.5620 Debug Info => database
+2022-05-09 22:16:32.5620 Debug Warn => database
+2022-05-09 22:16:32.5620 Debug Error => database
+2022-05-09 22:16:32.5620 Debug Fatal => database
+2022-05-09 22:16:32.5778 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Http3 by level:
+2022-05-09 22:16:32.5778 Debug Trace => database
+2022-05-09 22:16:32.5778 Debug Debug => database
+2022-05-09 22:16:32.5778 Debug Info => database
+2022-05-09 22:16:32.5778 Debug Warn => database
+2022-05-09 22:16:32.5778 Debug Error => database
+2022-05-09 22:16:32.5778 Debug Fatal => database
+2022-05-09 22:16:32.5778 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter by level:
+2022-05-09 22:16:32.5778 Debug Trace => database
+2022-05-09 22:16:32.5778 Debug Debug => database
+2022-05-09 22:16:32.5778 Debug Info => database
+2022-05-09 22:16:32.5778 Debug Warn => database
+2022-05-09 22:16:32.5778 Debug Error => database
+2022-05-09 22:16:32.5778 Debug Fatal => database
+2022-05-09 22:16:32.6028 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory by level:
+2022-05-09 22:16:32.6028 Debug Trace => database
+2022-05-09 22:16:32.6028 Debug Debug => database
+2022-05-09 22:16:32.6028 Debug Info => database
+2022-05-09 22:16:32.6028 Debug Warn => database
+2022-05-09 22:16:32.6028 Debug Error => database
+2022-05-09 22:16:32.6028 Debug Fatal => database
+2022-05-09 22:16:32.6117 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder by level:
+2022-05-09 22:16:32.6117 Debug Trace => database
+2022-05-09 22:16:32.6117 Debug Debug => database
+2022-05-09 22:16:32.6117 Debug Info => database
+2022-05-09 22:16:32.6117 Debug Warn => database
+2022-05-09 22:16:32.6117 Debug Error => database
+2022-05-09 22:16:32.6117 Debug Fatal => database
+2022-05-09 22:16:32.6117 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker by level:
+2022-05-09 22:16:32.6117 Debug Trace => database
+2022-05-09 22:16:32.6117 Debug Debug => database
+2022-05-09 22:16:32.6117 Debug Info => database
+2022-05-09 22:16:32.6117 Debug Warn => database
+2022-05-09 22:16:32.6117 Debug Error => database
+2022-05-09 22:16:32.6117 Debug Fatal => database
+2022-05-09 22:16:32.6411 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2022-05-09 22:16:32.6411 Debug Trace => database
+2022-05-09 22:16:32.6411 Debug Debug => database
+2022-05-09 22:16:32.6411 Debug Info => database
+2022-05-09 22:16:32.6411 Debug Warn => database
+2022-05-09 22:16:32.6411 Debug Error => database
+2022-05-09 22:16:32.6411 Debug Fatal => database
+2022-05-09 22:16:32.6411 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2022-05-09 22:16:32.6411 Debug Trace => database
+2022-05-09 22:16:32.6411 Debug Debug => database
+2022-05-09 22:16:32.6411 Debug Info => database
+2022-05-09 22:16:32.6411 Debug Warn => database
+2022-05-09 22:16:32.6411 Debug Error => database
+2022-05-09 22:16:32.6411 Debug Fatal => database
+2022-05-09 22:16:32.6411 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2022-05-09 22:16:32.6411 Debug Trace => database
+2022-05-09 22:16:32.6411 Debug Debug => database
+2022-05-09 22:16:32.6411 Debug Info => database
+2022-05-09 22:16:32.6411 Debug Warn => database
+2022-05-09 22:16:32.6411 Debug Error => database
+2022-05-09 22:16:32.6411 Debug Fatal => database
+2022-05-09 22:16:32.6411 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2022-05-09 22:16:32.6411 Debug Trace => database
+2022-05-09 22:16:32.6411 Debug Debug => database
+2022-05-09 22:16:32.6411 Debug Info => database
+2022-05-09 22:16:32.6411 Debug Warn => database
+2022-05-09 22:16:32.6559 Debug Error => database
+2022-05-09 22:16:32.6559 Debug Fatal => database
+2022-05-09 22:16:32.6559 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2022-05-09 22:16:32.6559 Debug Trace => database
+2022-05-09 22:16:32.6559 Debug Debug => database
+2022-05-09 22:16:32.6559 Debug Info => database
+2022-05-09 22:16:32.6559 Debug Warn => database
+2022-05-09 22:16:32.6559 Debug Error => database
+2022-05-09 22:16:32.6559 Debug Fatal => database
+2022-05-09 22:16:32.6559 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2022-05-09 22:16:32.6559 Debug Trace => database
+2022-05-09 22:16:32.6559 Debug Debug => database
+2022-05-09 22:16:32.6559 Debug Info => database
+2022-05-09 22:16:32.6559 Debug Warn => database
+2022-05-09 22:16:32.6559 Debug Error => database
+2022-05-09 22:16:32.6559 Debug Fatal => database
+2022-05-09 22:16:32.6716 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2022-05-09 22:16:32.6716 Debug Trace => database
+2022-05-09 22:16:32.6716 Debug Debug => database
+2022-05-09 22:16:32.6716 Debug Info => database
+2022-05-09 22:16:32.6716 Debug Warn => database
+2022-05-09 22:16:32.6716 Debug Error => database
+2022-05-09 22:16:32.6716 Debug Fatal => database
+2022-05-09 22:16:32.6716 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2022-05-09 22:16:32.6716 Debug Trace => database
+2022-05-09 22:16:32.6716 Debug Debug => database
+2022-05-09 22:16:32.6716 Debug Info => database
+2022-05-09 22:16:32.6716 Debug Warn => database
+2022-05-09 22:16:32.6716 Debug Error => database
+2022-05-09 22:16:32.6716 Debug Fatal => database
+2022-05-09 22:16:32.6716 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2022-05-09 22:16:32.6716 Debug Trace => database
+2022-05-09 22:16:32.6716 Debug Debug => database
+2022-05-09 22:16:32.6716 Debug Info => database
+2022-05-09 22:16:32.6716 Debug Warn => database
+2022-05-09 22:16:32.6716 Debug Error => database
+2022-05-09 22:16:32.6716 Debug Fatal => database
+2022-05-09 22:16:32.6716 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService by level:
+2022-05-09 22:16:32.6716 Debug Trace => database
+2022-05-09 22:16:32.6867 Debug Debug => database
+2022-05-09 22:16:32.6867 Debug Info => database
+2022-05-09 22:16:32.6867 Debug Warn => database
+2022-05-09 22:16:32.6867 Debug Error => database
+2022-05-09 22:16:32.6867 Debug Fatal => database
+2022-05-09 22:16:32.6867 Debug Targets for Microsoft.AspNetCore.Hosting.Diagnostics by level:
+2022-05-09 22:16:32.6867 Debug Trace => database
+2022-05-09 22:16:32.6867 Debug Debug => database
+2022-05-09 22:16:32.6867 Debug Info => database
+2022-05-09 22:16:32.6867 Debug Warn => database
+2022-05-09 22:16:32.6867 Debug Error => database
+2022-05-09 22:16:32.6867 Debug Fatal => database
+2022-05-09 22:16:32.7039 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2022-05-09 22:16:32.7039 Debug Trace => database
+2022-05-09 22:16:32.7039 Debug Debug => database
+2022-05-09 22:16:32.7039 Debug Info => database
+2022-05-09 22:16:32.7039 Debug Warn => database
+2022-05-09 22:16:32.7039 Debug Error => database
+2022-05-09 22:16:32.7039 Debug Fatal => database
+2022-05-09 22:16:32.7039 Debug Targets for Microsoft.AspNetCore.Routing.EndpointMiddleware by level:
+2022-05-09 22:16:32.7039 Debug Trace => database
+2022-05-09 22:16:32.7039 Debug Debug => database
+2022-05-09 22:16:32.7039 Debug Info => database
+2022-05-09 22:16:32.7039 Debug Warn => database
+2022-05-09 22:16:32.7177 Debug Error => database
+2022-05-09 22:16:32.7177 Debug Fatal => database
+2022-05-09 22:16:32.7177 Debug Targets for Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware by level:
+2022-05-09 22:16:32.7177 Debug Trace => database
+2022-05-09 22:16:32.7177 Debug Debug => database
+2022-05-09 22:16:32.7177 Debug Info => database
+2022-05-09 22:16:32.7177 Debug Warn => database
+2022-05-09 22:16:32.7177 Debug Error => database
+2022-05-09 22:16:32.7177 Debug Fatal => database
+2022-05-09 22:16:32.7177 Debug Targets for Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware by level:
+2022-05-09 22:16:32.7177 Debug Trace => database
+2022-05-09 22:16:32.7177 Debug Debug => database
+2022-05-09 22:16:32.7177 Debug Info => database
+2022-05-09 22:16:32.7177 Debug Warn => database
+2022-05-09 22:16:32.7177 Debug Error => database
+2022-05-09 22:16:32.7177 Debug Fatal => database
+2022-05-09 22:16:32.7177 Debug Targets for Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware by level:
+2022-05-09 22:16:32.7177 Debug Trace => database
+2022-05-09 22:16:32.7177 Debug Debug => database
+2022-05-09 22:16:32.7177 Debug Info => database
+2022-05-09 22:16:32.7177 Debug Warn => database
+2022-05-09 22:16:32.7177 Debug Error => database
+2022-05-09 22:16:32.7177 Debug Fatal => database
+2022-05-09 22:16:32.7177 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
+2022-05-09 22:16:32.7177 Debug Trace => database
+2022-05-09 22:16:32.7177 Debug Debug => database
+2022-05-09 22:16:32.7177 Debug Info => database
+2022-05-09 22:16:32.7177 Debug Warn => database
+2022-05-09 22:16:32.7337 Debug Error => database
+2022-05-09 22:16:32.7337 Debug Fatal => database
+2022-05-09 22:16:32.7337 Debug Targets for Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware by level:
+2022-05-09 22:16:32.7337 Debug Trace => database
+2022-05-09 22:16:32.7337 Debug Debug => database
+2022-05-09 22:16:32.7337 Debug Info => database
+2022-05-09 22:16:32.7337 Debug Warn => database
+2022-05-09 22:16:32.7337 Debug Error => database
+2022-05-09 22:16:32.7337 Debug Fatal => database
+2022-05-09 22:16:32.8019 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
+2022-05-09 22:16:32.8019 Debug Trace => database
+2022-05-09 22:16:32.8019 Debug Debug => database
+2022-05-09 22:16:32.8019 Debug Info => database
+2022-05-09 22:16:32.8019 Debug Warn => database
+2022-05-09 22:16:32.8019 Debug Error => database
+2022-05-09 22:16:32.8019 Debug Fatal => database
+2022-05-09 22:16:32.8492 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:16:32.8492 Trace Scanning SimpleLayout ''Data Source=(localdb)\localhost;Database=NLogDatabase;Trusted_Connection=True;''
+2022-05-09 22:16:32.8492 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:16:32.8492 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-09 22:16:32.8492 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:16:32.9559 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:16:32.9559 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:16:32.835' (String)
+2022-05-09 22:16:32.9559 Trace   DatabaseTarget: Parameter: '@msg' = 'Now listening on: https://localhost:7253' (String)
+2022-05-09 22:16:32.9559 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:16:32.9559 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:16:32.9559 Trace   DatabaseTarget: Parameter: '@trace' = 'AsyncMethodBuilderCore.Start => <StartAsync>d__12.MoveNext => GenericWebHostService.StartAsync' (String)
+2022-05-09 22:16:32.9678 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:16:32.9678 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:16:32.9678 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:16:32.9954 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:16:32.9954 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:16:32.9954 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:16:32.9996 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:16:32.995' (String)
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@msg' = 'Now listening on: http://localhost:5184' (String)
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@trace' = 'AsyncMethodBuilderCore.Start => <StartAsync>d__12.MoveNext => GenericWebHostService.StartAsync' (String)
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:16:32.9996 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:16:32.9996 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:16:32.9996 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:16:32.9996 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:16:32.9996 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:16:32.999' (String)
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@msg' = 'Application started. Press Ctrl+C to shut down.' (String)
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@trace' = 'CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted' (String)
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:16:32.9996 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:16:32.9996 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:16:33.0163 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:16:33.0163 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:16:33.0163 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:16:33.0163 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:16:33.0163 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:16:33.016' (String)
+2022-05-09 22:16:33.0163 Trace   DatabaseTarget: Parameter: '@msg' = 'Hosting environment: Development' (String)
+2022-05-09 22:16:33.0163 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:16:33.0163 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:16:33.0163 Trace   DatabaseTarget: Parameter: '@trace' = 'CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted' (String)
+2022-05-09 22:16:33.0163 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:16:33.0163 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:16:33.0163 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:16:33.0163 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:16:33.0163 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:16:33.0310 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:16:33.0310 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:16:33.0310 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:16:33.031' (String)
+2022-05-09 22:16:33.0310 Trace   DatabaseTarget: Parameter: '@msg' = 'Content root path: C:\GIT\NlogDotnet6\' (String)
+2022-05-09 22:16:33.0310 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:16:33.0310 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:16:33.0310 Trace   DatabaseTarget: Parameter: '@trace' = 'CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted' (String)
+2022-05-09 22:16:33.0310 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:16:33.0310 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:16:33.0310 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:16:33.0310 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:16:33.0310 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:17:22.2420 Debug Targets for Microsoft.AspNetCore.Routing.Matching.DfaMatcher by level:
+2022-05-09 22:17:22.2420 Debug Trace => database
+2022-05-09 22:17:22.2420 Debug Debug => database
+2022-05-09 22:17:22.2420 Debug Info => database
+2022-05-09 22:17:22.2420 Debug Warn => database
+2022-05-09 22:17:22.2420 Debug Error => database
+2022-05-09 22:17:22.2420 Debug Fatal => database
+2022-05-09 22:17:22.2507 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector by level:
+2022-05-09 22:17:22.2507 Debug Trace => database
+2022-05-09 22:17:22.2507 Debug Debug => database
+2022-05-09 22:17:22.2507 Debug Info => database
+2022-05-09 22:17:22.2507 Debug Warn => database
+2022-05-09 22:17:22.2507 Debug Error => database
+2022-05-09 22:17:22.2507 Debug Fatal => database
+2022-05-09 22:17:22.2507 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider by level:
+2022-05-09 22:17:22.2507 Debug Trace => database
+2022-05-09 22:17:22.2507 Debug Debug => database
+2022-05-09 22:17:22.2507 Debug Info => database
+2022-05-09 22:17:22.2507 Debug Warn => database
+2022-05-09 22:17:22.2507 Debug Error => database
+2022-05-09 22:17:22.2507 Debug Fatal => database
+2022-05-09 22:17:22.2714 Debug Targets for NlogDotnet6.Controllers.HomeController by level:
+2022-05-09 22:17:22.2714 Debug Trace => database
+2022-05-09 22:17:22.2714 Debug Debug => database
+2022-05-09 22:17:22.2714 Debug Info => database
+2022-05-09 22:17:22.2714 Debug Warn => database
+2022-05-09 22:17:22.2714 Debug Error => database
+2022-05-09 22:17:22.2714 Debug Fatal => database
+2022-05-09 22:17:22.2714 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:17:22.2714 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:17:22.2714 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:17:22.271' (String)
+2022-05-09 22:17:22.2714 Trace   DatabaseTarget: Parameter: '@msg' = 'LOG DE INFORMAÇÃO' (String)
+2022-05-09 22:17:22.2714 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:17:22.2714 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:17:22.2714 Trace   DatabaseTarget: Parameter: '@trace' = 'SyncActionResultExecutor.Execute => <no type>.lambda_method1 => HomeController.Index' (String)
+2022-05-09 22:17:22.2714 Trace   DatabaseTarget: Parameter: '@logger' = 'NlogDotnet6.Controllers.HomeController' (String)
+2022-05-09 22:17:22.2714 Trace   DatabaseTarget: Parameter: '@url' = 'https://localhost/' (String)
+2022-05-09 22:17:22.2821 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:17:22.2821 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:17:22.2821 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:17:22.2821 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:17:22.2821 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:17:22.282' (String)
+2022-05-09 22:17:22.2821 Trace   DatabaseTarget: Parameter: '@msg' = 'LOG DE WARNNING ' (String)
+2022-05-09 22:17:22.2821 Trace   DatabaseTarget: Parameter: '@level' = 'Warn' (String)
+2022-05-09 22:17:22.2821 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:17:22.2821 Trace   DatabaseTarget: Parameter: '@trace' = 'SyncActionResultExecutor.Execute => <no type>.lambda_method1 => HomeController.Index' (String)
+2022-05-09 22:17:22.2821 Trace   DatabaseTarget: Parameter: '@logger' = 'NlogDotnet6.Controllers.HomeController' (String)
+2022-05-09 22:17:22.2821 Trace   DatabaseTarget: Parameter: '@url' = 'https://localhost/' (String)
+2022-05-09 22:17:22.2997 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:17:22.2997 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:17:22.2997 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:17:22.2997 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:17:22.2997 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:17:22.299' (String)
+2022-05-09 22:17:22.2997 Trace   DatabaseTarget: Parameter: '@msg' = 'LOG DE UM EXCEPTION' (String)
+2022-05-09 22:17:22.2997 Trace   DatabaseTarget: Parameter: '@level' = 'Error' (String)
+2022-05-09 22:17:22.2997 Trace   DatabaseTarget: Parameter: '@exception' = 'Exception of type 'System.Exception' was thrown.' (String)
+2022-05-09 22:17:22.2997 Trace   DatabaseTarget: Parameter: '@trace' = 'SyncActionResultExecutor.Execute => <no type>.lambda_method1 => HomeController.Index' (String)
+2022-05-09 22:17:22.2997 Trace   DatabaseTarget: Parameter: '@logger' = 'NlogDotnet6.Controllers.HomeController' (String)
+2022-05-09 22:17:22.2997 Trace   DatabaseTarget: Parameter: '@url' = 'https://localhost/' (String)
+2022-05-09 22:17:22.2997 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:17:22.2997 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:17:22.3125 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler by level:
+2022-05-09 22:17:22.3125 Debug Trace => database
+2022-05-09 22:17:22.3125 Debug Debug => database
+2022-05-09 22:17:22.3125 Debug Info => database
+2022-05-09 22:17:22.3125 Debug Warn => database
+2022-05-09 22:17:22.3125 Debug Error => database
+2022-05-09 22:17:22.3125 Debug Fatal => database
+2022-05-09 22:17:22.3125 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine by level:
+2022-05-09 22:17:22.3125 Debug Trace => database
+2022-05-09 22:17:22.3125 Debug Debug => database
+2022-05-09 22:17:22.3125 Debug Info => database
+2022-05-09 22:17:22.3125 Debug Warn => database
+2022-05-09 22:17:22.3125 Debug Error => database
+2022-05-09 22:17:22.3125 Debug Fatal => database
+2022-05-09 22:17:22.3125 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor by level:
+2022-05-09 22:17:22.3125 Debug Trace => database
+2022-05-09 22:17:22.3281 Debug Debug => database
+2022-05-09 22:17:22.3281 Debug Info => database
+2022-05-09 22:17:22.3281 Debug Warn => database
+2022-05-09 22:17:22.3281 Debug Error => database
+2022-05-09 22:17:22.3281 Debug Fatal => database
+2022-05-09 22:17:22.3451 Debug Targets for Microsoft.AspNetCore.Routing.DefaultLinkGenerator by level:
+2022-05-09 22:17:22.3451 Debug Trace => database
+2022-05-09 22:17:22.3451 Debug Debug => database
+2022-05-09 22:17:22.3451 Debug Info => database
+2022-05-09 22:17:22.3451 Debug Warn => database
+2022-05-09 22:17:22.3451 Debug Error => database
+2022-05-09 22:17:22.3451 Debug Fatal => database
+2022-05-09 22:17:22.3451 Debug Targets for Microsoft.AspNetCore.Mvc.Routing.EndpointRoutingUrlHelper by level:
+2022-05-09 22:17:22.3451 Debug Trace => database
+2022-05-09 22:17:22.3451 Debug Debug => database
+2022-05-09 22:17:22.3451 Debug Info => database
+2022-05-09 22:17:22.3451 Debug Warn => database
+2022-05-09 22:17:22.3451 Debug Error => database
+2022-05-09 22:17:22.3451 Debug Fatal => database
+2022-05-09 22:17:22.3451 Debug Targets for Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker by level:
+2022-05-09 22:17:22.3451 Debug Trace => database
+2022-05-09 22:17:22.3451 Debug Debug => database
+2022-05-09 22:17:22.3451 Debug Info => database
+2022-05-09 22:17:22.3451 Debug Warn => database
+2022-05-09 22:17:22.3451 Debug Error => database
+2022-05-09 22:17:22.3451 Debug Fatal => database
+2022-05-09 22:17:22.3451 Debug Targets for Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery by level:
+2022-05-09 22:17:22.3451 Debug Trace => database
+2022-05-09 22:17:22.3451 Debug Debug => database
+2022-05-09 22:17:22.3451 Debug Info => database
+2022-05-09 22:17:22.3451 Debug Warn => database
+2022-05-09 22:17:22.3451 Debug Error => database
+2022-05-09 22:17:22.3593 Debug Fatal => database
+2022-05-09 22:17:22.3593 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper by level:
+2022-05-09 22:17:22.3593 Debug Trace => database
+2022-05-09 22:17:22.3593 Debug Debug => database
+2022-05-09 22:17:22.3593 Debug Info => database
+2022-05-09 22:17:22.3593 Debug Warn => database
+2022-05-09 22:17:22.3593 Debug Error => database
+2022-05-09 22:17:22.3593 Debug Fatal => database
+2022-05-09 22:17:22.3841 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper by level:
+2022-05-09 22:17:22.3841 Debug Trace => database
+2022-05-09 22:17:22.3841 Debug Debug => database
+2022-05-09 22:17:22.3841 Debug Info => database
+2022-05-09 22:17:22.3841 Debug Warn => database
+2022-05-09 22:17:22.3841 Debug Error => database
+2022-05-09 22:17:22.3841 Debug Fatal => database
+2022-05-09 22:19:08.6515 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:19:08.6515 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:19:08.6515 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:19:08.651' (String)
+2022-05-09 22:19:08.6515 Trace   DatabaseTarget: Parameter: '@msg' = 'LOG DE INFORMAÇÃO' (String)
+2022-05-09 22:19:08.6515 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:19:08.6515 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:19:08.6515 Trace   DatabaseTarget: Parameter: '@trace' = 'SyncActionResultExecutor.Execute => <no type>.lambda_method1 => HomeController.Index' (String)
+2022-05-09 22:19:08.6515 Trace   DatabaseTarget: Parameter: '@logger' = 'NlogDotnet6.Controllers.HomeController' (String)
+2022-05-09 22:19:08.6515 Trace   DatabaseTarget: Parameter: '@url' = 'https://localhost/' (String)
+2022-05-09 22:19:08.6604 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:19:08.6604 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:19:08.6604 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:19:08.6604 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:19:08.660' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@msg' = 'LOG DE WARNNING ' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@level' = 'Warn' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@trace' = 'SyncActionResultExecutor.Execute => <no type>.lambda_method1 => HomeController.Index' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@logger' = 'NlogDotnet6.Controllers.HomeController' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@url' = 'https://localhost/' (String)
+2022-05-09 22:19:08.6604 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:19:08.6604 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:19:08.6604 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:19:08.6604 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:19:08.660' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@msg' = 'LOG DE UM EXCEPTION' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@level' = 'Error' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@exception' = 'Exception of type 'System.Exception' was thrown.' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@trace' = 'SyncActionResultExecutor.Execute => <no type>.lambda_method1 => HomeController.Index' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@logger' = 'NlogDotnet6.Controllers.HomeController' (String)
+2022-05-09 22:19:08.6604 Trace   DatabaseTarget: Parameter: '@url' = 'https://localhost/' (String)
+2022-05-09 22:19:08.6748 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:19:08.6748 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:27:16.9571 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:27:16.9615 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:27:16.9615 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:27:16.957' (String)
+2022-05-09 22:27:16.9615 Trace   DatabaseTarget: Parameter: '@msg' = 'Application is shutting down...' (String)
+2022-05-09 22:27:16.9615 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:27:16.9615 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:27:16.9615 Trace   DatabaseTarget: Parameter: '@trace' = 'CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_1 => ConsoleLifetime.OnApplicationStopping' (String)
+2022-05-09 22:27:16.9615 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:27:16.9615 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:27:16.9615 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:27:16.9615 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:27:16.9615 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:27:16.9787 Debug LogFactory Flush with timeout=15 secs
+2022-05-09 22:27:16.9787 Trace Flushing all 1 targets...
+2022-05-09 22:27:16.9787 Trace ForEachItemInParallel() 1 items
+2022-05-09 22:27:16.9787 Trace Continuation invoked: 
+2022-05-09 22:27:16.9787 Trace Parallel task completed. 0 items remaining
+2022-05-09 22:27:16.9787 Debug Flush completed
+2022-05-09 22:27:16.9787 Info Shutdown() called. Logger closing...
+2022-05-09 22:27:16.9787 Info Closing old configuration.
+2022-05-09 22:27:16.9787 Debug LogFactory Flush with timeout=15 secs
+2022-05-09 22:27:16.9787 Trace Flushing all 1 targets...
+2022-05-09 22:27:16.9894 Trace ForEachItemInParallel() 1 items
+2022-05-09 22:27:16.9894 Trace Continuation invoked: 
+2022-05-09 22:27:16.9894 Trace Parallel task completed. 0 items remaining
+2022-05-09 22:27:16.9894 Debug Flush completed
+2022-05-09 22:27:16.9894 Debug Closing logging configuration...
+2022-05-09 22:27:16.9894 Trace Closing Database Target[database]
+2022-05-09 22:27:16.9894 Debug Closing target 'Database Target[database]'.
+2022-05-09 22:27:16.9894 Trace DatabaseTarget(Name=database): Close connection because of CloseTarget
+2022-05-09 22:27:16.9894 Debug Closed target 'Database Target[database]'.
+2022-05-09 22:27:16.9894 Trace Closing '
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '
+2022-05-09 22:27:16.9894 Trace Closing Layout Renderer: ${literal}
+2022-05-09 22:27:16.9894 Trace Closing '${var:connectionString}'
+2022-05-09 22:27:16.9894 Trace Closing Layout Renderer: ${var}
+2022-05-09 22:27:16.9894 Trace Closing '.'
+2022-05-09 22:27:16.9894 Trace Closing Layout Renderer: ${literal}
+2022-05-09 22:27:16.9894 Trace Closing '${date}'
+2022-05-09 22:27:16.9894 Trace Closing Layout Renderer: ${date}
+2022-05-09 22:27:16.9894 Trace Closing '${message}'
+2022-05-09 22:27:16.9894 Trace Closing Layout Renderer: ${message}
+2022-05-09 22:27:16.9894 Trace Closing '${level}'
+2022-05-09 22:27:16.9894 Trace Closing Layout Renderer: ${level}
+2022-05-09 22:27:16.9894 Trace Closing '${exception}'
+2022-05-09 22:27:16.9894 Trace Closing Layout Renderer: ${exception}
+2022-05-09 22:27:16.9894 Trace Closing '${stacktrace}'
+2022-05-09 22:27:16.9894 Trace Closing Layout Renderer: ${stacktrace}
+2022-05-09 22:27:17.0058 Trace Closing '${logger}'
+2022-05-09 22:27:17.0058 Trace Closing Layout Renderer: ${logger}
+2022-05-09 22:27:17.0058 Trace Closing '${aspnet-request-url}'
+2022-05-09 22:27:17.0058 Trace Closing Layout Renderer: ${aspnet-request-url}
+2022-05-09 22:27:17.0058 Debug Finished closing logging configuration.
+2022-05-09 22:27:17.0058 Debug Stopping file watching for path 'C:\GIT\NlogDotnet6\bin\Debug\net6.0' filter 'NLog.config'
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Program
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.Hosting.Lifetime
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: NlogDotnet6
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.BadRequests
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Connections
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Http2
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Http3
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.TypeForwardingActivator
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+2022-05-09 22:27:17.0058 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.Hosting.Diagnostics
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointMiddleware
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: NlogDotnet6.Controllers.HomeController
+2022-05-09 22:27:17.0221 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+2022-05-09 22:27:17.0372 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine
+2022-05-09 22:27:17.0372 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+2022-05-09 22:27:17.0372 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+2022-05-09 22:27:17.0372 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Routing.EndpointRoutingUrlHelper
+2022-05-09 22:27:17.0372 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker
+2022-05-09 22:27:17.0372 Debug Targets not configured for logger: Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery
+2022-05-09 22:27:17.0372 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper
+2022-05-09 22:27:17.0372 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper
+2022-05-09 22:27:17.0372 Info Logger has been closed down.
+2022-05-09 22:27:17.0372 Info AppDomain Shutting down. Logger closing...
+2022-05-09 22:27:17.0372 Info Logger has been shut down.
+2022-05-09 22:27:28.6176 Info Message Template Auto Format enabled
+2022-05-09 22:27:28.6176 Info Loading assembly: NLog.Web.AspNetCore
+2022-05-09 22:27:28.6176 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-09 22:27:28.6381 Debug Setting 'NLog.Targets.DatabaseTarget.commandText' to '
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '
+2022-05-09 22:27:28.6381 Debug Setting 'NLog.Targets.DatabaseTarget.name' to 'database'
+2022-05-09 22:27:28.6381 Debug Setting 'NLog.Targets.DatabaseTarget.connectionString' to '${var:connectionString}'
+2022-05-09 22:27:28.6381 Debug Setting 'NLog.LayoutRenderers.VariableLayoutRenderer.Name' to 'connectionString'
+2022-05-09 22:27:28.6381 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.6473 Trace Scanning VariableLayoutRenderer 'Layout Renderer: ${var}'
+2022-05-09 22:27:28.6473 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@datetime'
+2022-05-09 22:27:28.6473 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${date}'
+2022-05-09 22:27:28.6473 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.6473 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2022-05-09 22:27:28.6473 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@msg'
+2022-05-09 22:27:28.6473 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${message}'
+2022-05-09 22:27:28.6473 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.6473 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-09 22:27:28.6473 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@level'
+2022-05-09 22:27:28.6473 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${level}'
+2022-05-09 22:27:28.6473 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.6473 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-09 22:27:28.6473 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@exception'
+2022-05-09 22:27:28.6473 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${exception}'
+2022-05-09 22:27:28.6643 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.6643 Trace Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2022-05-09 22:27:28.6643 Trace  Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2022-05-09 22:27:28.6643 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@trace'
+2022-05-09 22:27:28.6643 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${stacktrace}'
+2022-05-09 22:27:28.6643 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.6643 Trace Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2022-05-09 22:27:28.6643 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@logger'
+2022-05-09 22:27:28.6643 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${logger}'
+2022-05-09 22:27:28.6643 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.6643 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-05-09 22:27:28.6643 Debug Setting 'NLog.Targets.DatabaseParameterInfo.name' to '@url'
+2022-05-09 22:27:28.6643 Debug Setting 'NLog.Targets.DatabaseParameterInfo.layout' to '${aspnet-request-url}'
+2022-05-09 22:27:28.6643 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.6643 Trace Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2022-05-09 22:27:28.6643 Info Adding target DatabaseTarget(Name=database)
+2022-05-09 22:27:28.6643 Debug Registered target database: NLog.Targets.DatabaseTarget
+2022-05-09 22:27:28.6643 Trace ParseRulesElement
+2022-05-09 22:27:28.6905 Debug Watching path 'C:\GIT\NlogDotnet6\bin\Debug\net6.0' filter 'NLog.config' for changes.
+2022-05-09 22:27:28.6905 Debug --- NLog configuration dump ---
+2022-05-09 22:27:28.6905 Debug Targets:
+2022-05-09 22:27:28.6927 Debug Database Target[database]
+2022-05-09 22:27:28.6927 Debug Rules:
+2022-05-09 22:27:28.6927 Debug logNamePattern: (:All) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ database ]
+2022-05-09 22:27:28.6927 Debug --- End of NLog configuration dump ---
+2022-05-09 22:27:28.6927 Trace FindReachableObject<System.Object>:
+2022-05-09 22:27:28.6927 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ database ]'
+2022-05-09 22:27:28.6927 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2022-05-09 22:27:28.6927 Trace  Scanning DatabaseTarget 'Database Target[database]'
+2022-05-09 22:27:28.6927 Trace   Scanning Property CommandText ''
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '' NLog.Layouts
+2022-05-09 22:27:28.6927 Trace   Scanning SimpleLayout ''
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            ''
+2022-05-09 22:27:28.6927 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.6927 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-09 22:27:28.6927 Trace   Scanning Property ConnectionString ''${var:connectionString}'' NLog.Layouts
+2022-05-09 22:27:28.6927 Trace   Scanning SimpleLayout ''${var:connectionString}''
+2022-05-09 22:27:28.6927 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.6927 Trace    Scanning VariableLayoutRenderer 'Layout Renderer: ${var}'
+2022-05-09 22:27:28.6927 Trace   Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic
+2022-05-09 22:27:28.6927 Trace   Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic
+2022-05-09 22:27:28.6927 Trace   Scanning Property DBHost ''.'' NLog.Layouts
+2022-05-09 22:27:28.6927 Trace   Scanning SimpleLayout ''.''
+2022-05-09 22:27:28.6927 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.6927 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-09 22:27:28.6927 Trace   Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic
+2022-05-09 22:27:28.6927 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.6927 Trace    Scanning Property Layout ''${date}'' NLog.Layouts
+2022-05-09 22:27:28.6927 Trace    Scanning SimpleLayout ''${date}''
+2022-05-09 22:27:28.6927 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7089 Trace     Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2022-05-09 22:27:28.7089 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7089 Trace    Scanning Property Layout ''${message}'' NLog.Layouts
+2022-05-09 22:27:28.7089 Trace    Scanning SimpleLayout ''${message}''
+2022-05-09 22:27:28.7089 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7089 Trace     Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-09 22:27:28.7089 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7089 Trace    Scanning Property Layout ''${level}'' NLog.Layouts
+2022-05-09 22:27:28.7089 Trace    Scanning SimpleLayout ''${level}''
+2022-05-09 22:27:28.7089 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7089 Trace     Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-09 22:27:28.7089 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7089 Trace    Scanning Property Layout ''${exception}'' NLog.Layouts
+2022-05-09 22:27:28.7089 Trace    Scanning SimpleLayout ''${exception}''
+2022-05-09 22:27:28.7089 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7089 Trace     Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2022-05-09 22:27:28.7089 Trace      Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2022-05-09 22:27:28.7089 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7089 Trace    Scanning Property Layout ''${stacktrace}'' NLog.Layouts
+2022-05-09 22:27:28.7089 Trace    Scanning SimpleLayout ''${stacktrace}''
+2022-05-09 22:27:28.7089 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7089 Trace     Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2022-05-09 22:27:28.7089 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7089 Trace    Scanning Property Layout ''${logger}'' NLog.Layouts
+2022-05-09 22:27:28.7089 Trace    Scanning SimpleLayout ''${logger}''
+2022-05-09 22:27:28.7089 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7089 Trace     Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-05-09 22:27:28.7089 Trace   Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7089 Trace    Scanning Property Layout ''${aspnet-request-url}'' NLog.Layouts
+2022-05-09 22:27:28.7089 Trace    Scanning SimpleLayout ''${aspnet-request-url}''
+2022-05-09 22:27:28.7089 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7089 Trace     Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2022-05-09 22:27:28.7089 Trace   Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic
+2022-05-09 22:27:28.7089 Trace   Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic
+2022-05-09 22:27:28.7089 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2022-05-09 22:27:28.7089 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2022-05-09 22:27:28.7254 Info Validating config: TargetNames=database, ConfigItems=29, FilePath=C:\GIT\NlogDotnet6\bin\Debug\net6.0\NLog.config
+2022-05-09 22:27:28.7254 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2022-05-09 22:27:28.7254 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2022-05-09 22:27:28.7254 Trace Initializing Layout Renderer: ${aspnet-request-url}
+2022-05-09 22:27:28.7254 Trace Initializing '${aspnet-request-url}'
+2022-05-09 22:27:28.7254 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.7254 Trace Scanning SimpleLayout ''${aspnet-request-url}''
+2022-05-09 22:27:28.7254 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7254 Trace  Scanning AspNetRequestUrlRenderer 'Layout Renderer: ${aspnet-request-url}'
+2022-05-09 22:27:28.7254 Trace Initializing Layout Renderer: ${logger}
+2022-05-09 22:27:28.7254 Trace Initializing '${logger}'
+2022-05-09 22:27:28.7403 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.7403 Trace Scanning SimpleLayout ''${logger}''
+2022-05-09 22:27:28.7403 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7403 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2022-05-09 22:27:28.7403 Trace Initializing Layout Renderer: ${stacktrace}
+2022-05-09 22:27:28.7403 Trace Initializing '${stacktrace}'
+2022-05-09 22:27:28.7403 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.7403 Trace Scanning SimpleLayout ''${stacktrace}''
+2022-05-09 22:27:28.7403 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7403 Trace  Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2022-05-09 22:27:28.7403 Trace Initializing Layout Renderer: ${exception}
+2022-05-09 22:27:28.7403 Trace Initializing '${exception}'
+2022-05-09 22:27:28.7403 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.7403 Trace Scanning SimpleLayout ''${exception}''
+2022-05-09 22:27:28.7403 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7561 Trace  Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2022-05-09 22:27:28.7561 Trace   Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2022-05-09 22:27:28.7561 Trace Initializing Layout Renderer: ${level}
+2022-05-09 22:27:28.7561 Trace Initializing '${level}'
+2022-05-09 22:27:28.7561 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.7561 Trace Scanning SimpleLayout ''${level}''
+2022-05-09 22:27:28.7561 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7561 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2022-05-09 22:27:28.7561 Trace Initializing Layout Renderer: ${message}
+2022-05-09 22:27:28.7561 Trace Initializing '${message}'
+2022-05-09 22:27:28.7561 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.7561 Trace Scanning SimpleLayout ''${message}''
+2022-05-09 22:27:28.7561 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7561 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2022-05-09 22:27:28.7561 Trace Initializing Layout Renderer: ${date}
+2022-05-09 22:27:28.7561 Trace Initializing '${date}'
+2022-05-09 22:27:28.7561 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.7561 Trace Scanning SimpleLayout ''${date}''
+2022-05-09 22:27:28.7561 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7561 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2022-05-09 22:27:28.7561 Trace Initializing Layout Renderer: ${literal}
+2022-05-09 22:27:28.7561 Trace Initializing '.'
+2022-05-09 22:27:28.7561 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.7712 Trace Scanning SimpleLayout ''.''
+2022-05-09 22:27:28.7712 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7712 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-09 22:27:28.7712 Trace Initializing Layout Renderer: ${var}
+2022-05-09 22:27:28.7712 Trace Initializing '${var:connectionString}'
+2022-05-09 22:27:28.7712 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.7712 Trace Scanning SimpleLayout ''${var:connectionString}''
+2022-05-09 22:27:28.7712 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7712 Trace  Scanning VariableLayoutRenderer 'Layout Renderer: ${var}'
+2022-05-09 22:27:28.7712 Trace Initializing Layout Renderer: ${literal}
+2022-05-09 22:27:28.7712 Trace Initializing '
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '
+2022-05-09 22:27:28.7712 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:28.7712 Trace Scanning SimpleLayout ''
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            ''
+2022-05-09 22:27:28.7712 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:28.7712 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-09 22:27:28.7712 Trace Initializing Database Target[database]
+2022-05-09 22:27:28.7712 Trace FindReachableObject<NLog.Layouts.Layout>:
+2022-05-09 22:27:28.7712 Trace Scanning DatabaseTarget 'Database Target[database]'
+2022-05-09 22:27:28.7712 Trace  Scanning Property CommandText ''
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '' NLog.Layouts
+2022-05-09 22:27:28.7712 Trace  Scanning SimpleLayout ''
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            ''
+2022-05-09 22:27:28.7712 Trace  Scanning Property ConnectionString ''${var:connectionString}'' NLog.Layouts
+2022-05-09 22:27:28.7712 Trace  Scanning SimpleLayout ''${var:connectionString}''
+2022-05-09 22:27:28.7712 Trace  Scanning Property InstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic
+2022-05-09 22:27:28.7712 Trace  Scanning Property UninstallDdlCommands 'System.Collections.Generic.List`1[NLog.Targets.DatabaseCommandInfo]' System.Collections.Generic
+2022-05-09 22:27:28.7872 Trace  Scanning Property DBHost ''.'' NLog.Layouts
+2022-05-09 22:27:28.7872 Trace  Scanning SimpleLayout ''.''
+2022-05-09 22:27:28.7872 Trace  Scanning Property Parameters 'System.Collections.Generic.List`1[NLog.Targets.DatabaseParameterInfo]' System.Collections.Generic
+2022-05-09 22:27:28.7872 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7872 Trace   Scanning Property Layout ''${date}'' NLog.Layouts
+2022-05-09 22:27:28.7872 Trace   Scanning SimpleLayout ''${date}''
+2022-05-09 22:27:28.7872 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7872 Trace   Scanning Property Layout ''${message}'' NLog.Layouts
+2022-05-09 22:27:28.7872 Trace   Scanning SimpleLayout ''${message}''
+2022-05-09 22:27:28.7872 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7872 Trace   Scanning Property Layout ''${level}'' NLog.Layouts
+2022-05-09 22:27:28.7872 Trace   Scanning SimpleLayout ''${level}''
+2022-05-09 22:27:28.7872 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7872 Trace   Scanning Property Layout ''${exception}'' NLog.Layouts
+2022-05-09 22:27:28.7872 Trace   Scanning SimpleLayout ''${exception}''
+2022-05-09 22:27:28.7872 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7872 Trace   Scanning Property Layout ''${stacktrace}'' NLog.Layouts
+2022-05-09 22:27:28.7872 Trace   Scanning SimpleLayout ''${stacktrace}''
+2022-05-09 22:27:28.7872 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7872 Trace   Scanning Property Layout ''${logger}'' NLog.Layouts
+2022-05-09 22:27:28.7872 Trace   Scanning SimpleLayout ''${logger}''
+2022-05-09 22:27:28.7872 Trace  Scanning DatabaseParameterInfo 'NLog.Targets.DatabaseParameterInfo'
+2022-05-09 22:27:28.7872 Trace   Scanning Property Layout ''${aspnet-request-url}'' NLog.Layouts
+2022-05-09 22:27:28.7872 Trace   Scanning SimpleLayout ''${aspnet-request-url}''
+2022-05-09 22:27:28.8022 Trace  Scanning Property ConnectionProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic
+2022-05-09 22:27:28.8022 Trace  Scanning Property CommandProperties 'System.Collections.Generic.List`1[NLog.Targets.DatabaseObjectPropertyInfo]' System.Collections.Generic
+2022-05-09 22:27:28.8022 Trace Database Target[database] has 10 layouts
+2022-05-09 22:27:28.8183 Debug Targets for Program by level:
+2022-05-09 22:27:28.8183 Debug Trace => database
+2022-05-09 22:27:28.8183 Debug Debug => database
+2022-05-09 22:27:28.8183 Debug Info => database
+2022-05-09 22:27:28.8183 Debug Warn => database
+2022-05-09 22:27:28.8183 Debug Error => database
+2022-05-09 22:27:28.8183 Debug Fatal => database
+2022-05-09 22:27:28.8870 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-09 22:27:28.9405 Debug Hide assemblies for callsite
+2022-05-09 22:27:28.9405 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2022-05-09 22:27:28.9456 Debug Targets for Microsoft.Extensions.Hosting.Internal.ApplicationLifetime by level:
+2022-05-09 22:27:28.9456 Debug Trace => database
+2022-05-09 22:27:28.9456 Debug Debug => database
+2022-05-09 22:27:28.9456 Debug Info => database
+2022-05-09 22:27:28.9456 Debug Warn => database
+2022-05-09 22:27:28.9456 Debug Error => database
+2022-05-09 22:27:28.9456 Debug Fatal => database
+2022-05-09 22:27:28.9456 Debug Targets for Microsoft.Extensions.Hosting.Internal.Host by level:
+2022-05-09 22:27:28.9456 Debug Trace => database
+2022-05-09 22:27:28.9456 Debug Debug => database
+2022-05-09 22:27:28.9456 Debug Info => database
+2022-05-09 22:27:28.9456 Debug Warn => database
+2022-05-09 22:27:28.9456 Debug Error => database
+2022-05-09 22:27:28.9456 Debug Fatal => database
+2022-05-09 22:27:28.9456 Debug Targets for Microsoft.Hosting.Lifetime by level:
+2022-05-09 22:27:28.9456 Debug Trace => database
+2022-05-09 22:27:28.9456 Debug Debug => database
+2022-05-09 22:27:28.9456 Debug Info => database
+2022-05-09 22:27:28.9456 Debug Warn => database
+2022-05-09 22:27:28.9456 Debug Error => database
+2022-05-09 22:27:28.9456 Debug Fatal => database
+2022-05-09 22:27:28.9456 Debug Targets for NlogDotnet6 by level:
+2022-05-09 22:27:28.9456 Debug Trace => database
+2022-05-09 22:27:28.9456 Debug Debug => database
+2022-05-09 22:27:28.9597 Debug Info => database
+2022-05-09 22:27:28.9597 Debug Warn => database
+2022-05-09 22:27:28.9597 Debug Error => database
+2022-05-09 22:27:28.9597 Debug Fatal => database
+2022-05-09 22:27:28.9597 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer by level:
+2022-05-09 22:27:28.9597 Debug Trace => database
+2022-05-09 22:27:28.9597 Debug Debug => database
+2022-05-09 22:27:28.9597 Debug Info => database
+2022-05-09 22:27:28.9597 Debug Warn => database
+2022-05-09 22:27:28.9597 Debug Error => database
+2022-05-09 22:27:28.9597 Debug Fatal => database
+2022-05-09 22:27:28.9597 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware by level:
+2022-05-09 22:27:28.9597 Debug Trace => database
+2022-05-09 22:27:28.9741 Debug Debug => database
+2022-05-09 22:27:28.9741 Debug Info => database
+2022-05-09 22:27:28.9741 Debug Warn => database
+2022-05-09 22:27:28.9741 Debug Error => database
+2022-05-09 22:27:28.9741 Debug Fatal => database
+2022-05-09 22:27:28.9741 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2022-05-09 22:27:28.9741 Debug Trace => database
+2022-05-09 22:27:28.9741 Debug Debug => database
+2022-05-09 22:27:28.9741 Debug Info => database
+2022-05-09 22:27:28.9741 Debug Warn => database
+2022-05-09 22:27:28.9741 Debug Error => database
+2022-05-09 22:27:28.9741 Debug Fatal => database
+2022-05-09 22:27:28.9741 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.BadRequests by level:
+2022-05-09 22:27:28.9741 Debug Trace => database
+2022-05-09 22:27:28.9741 Debug Debug => database
+2022-05-09 22:27:28.9741 Debug Info => database
+2022-05-09 22:27:28.9741 Debug Warn => database
+2022-05-09 22:27:28.9741 Debug Error => database
+2022-05-09 22:27:28.9741 Debug Fatal => database
+2022-05-09 22:27:28.9741 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Connections by level:
+2022-05-09 22:27:28.9741 Debug Trace => database
+2022-05-09 22:27:28.9741 Debug Debug => database
+2022-05-09 22:27:28.9741 Debug Info => database
+2022-05-09 22:27:28.9741 Debug Warn => database
+2022-05-09 22:27:28.9741 Debug Error => database
+2022-05-09 22:27:28.9741 Debug Fatal => database
+2022-05-09 22:27:28.9741 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Http2 by level:
+2022-05-09 22:27:28.9741 Debug Trace => database
+2022-05-09 22:27:28.9741 Debug Debug => database
+2022-05-09 22:27:28.9741 Debug Info => database
+2022-05-09 22:27:28.9741 Debug Warn => database
+2022-05-09 22:27:28.9741 Debug Error => database
+2022-05-09 22:27:28.9741 Debug Fatal => database
+2022-05-09 22:27:28.9741 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Http3 by level:
+2022-05-09 22:27:28.9741 Debug Trace => database
+2022-05-09 22:27:28.9741 Debug Debug => database
+2022-05-09 22:27:28.9741 Debug Info => database
+2022-05-09 22:27:28.9741 Debug Warn => database
+2022-05-09 22:27:28.9741 Debug Error => database
+2022-05-09 22:27:28.9741 Debug Fatal => database
+2022-05-09 22:27:28.9922 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter by level:
+2022-05-09 22:27:28.9922 Debug Trace => database
+2022-05-09 22:27:28.9922 Debug Debug => database
+2022-05-09 22:27:28.9922 Debug Info => database
+2022-05-09 22:27:28.9922 Debug Warn => database
+2022-05-09 22:27:28.9922 Debug Error => database
+2022-05-09 22:27:28.9922 Debug Fatal => database
+2022-05-09 22:27:29.0088 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory by level:
+2022-05-09 22:27:29.0088 Debug Trace => database
+2022-05-09 22:27:29.0088 Debug Debug => database
+2022-05-09 22:27:29.0088 Debug Info => database
+2022-05-09 22:27:29.0088 Debug Warn => database
+2022-05-09 22:27:29.0088 Debug Error => database
+2022-05-09 22:27:29.0088 Debug Fatal => database
+2022-05-09 22:27:29.0088 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder by level:
+2022-05-09 22:27:29.0088 Debug Trace => database
+2022-05-09 22:27:29.0088 Debug Debug => database
+2022-05-09 22:27:29.0088 Debug Info => database
+2022-05-09 22:27:29.0088 Debug Warn => database
+2022-05-09 22:27:29.0211 Debug Error => database
+2022-05-09 22:27:29.0211 Debug Fatal => database
+2022-05-09 22:27:29.0211 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker by level:
+2022-05-09 22:27:29.0211 Debug Trace => database
+2022-05-09 22:27:29.0211 Debug Debug => database
+2022-05-09 22:27:29.0211 Debug Info => database
+2022-05-09 22:27:29.0211 Debug Warn => database
+2022-05-09 22:27:29.0211 Debug Error => database
+2022-05-09 22:27:29.0211 Debug Fatal => database
+2022-05-09 22:27:29.0474 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2022-05-09 22:27:29.0474 Debug Trace => database
+2022-05-09 22:27:29.0474 Debug Debug => database
+2022-05-09 22:27:29.0474 Debug Info => database
+2022-05-09 22:27:29.0474 Debug Warn => database
+2022-05-09 22:27:29.0474 Debug Error => database
+2022-05-09 22:27:29.0474 Debug Fatal => database
+2022-05-09 22:27:29.0474 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2022-05-09 22:27:29.0474 Debug Trace => database
+2022-05-09 22:27:29.0474 Debug Debug => database
+2022-05-09 22:27:29.0521 Debug Info => database
+2022-05-09 22:27:29.0521 Debug Warn => database
+2022-05-09 22:27:29.0521 Debug Error => database
+2022-05-09 22:27:29.0521 Debug Fatal => database
+2022-05-09 22:27:29.0521 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2022-05-09 22:27:29.0521 Debug Trace => database
+2022-05-09 22:27:29.0521 Debug Debug => database
+2022-05-09 22:27:29.0521 Debug Info => database
+2022-05-09 22:27:29.0521 Debug Warn => database
+2022-05-09 22:27:29.0521 Debug Error => database
+2022-05-09 22:27:29.0521 Debug Fatal => database
+2022-05-09 22:27:29.0521 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2022-05-09 22:27:29.0521 Debug Trace => database
+2022-05-09 22:27:29.0521 Debug Debug => database
+2022-05-09 22:27:29.0521 Debug Info => database
+2022-05-09 22:27:29.0521 Debug Warn => database
+2022-05-09 22:27:29.0521 Debug Error => database
+2022-05-09 22:27:29.0521 Debug Fatal => database
+2022-05-09 22:27:29.0521 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2022-05-09 22:27:29.0521 Debug Trace => database
+2022-05-09 22:27:29.0521 Debug Debug => database
+2022-05-09 22:27:29.0521 Debug Info => database
+2022-05-09 22:27:29.0521 Debug Warn => database
+2022-05-09 22:27:29.0521 Debug Error => database
+2022-05-09 22:27:29.0521 Debug Fatal => database
+2022-05-09 22:27:29.0700 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2022-05-09 22:27:29.0700 Debug Trace => database
+2022-05-09 22:27:29.0700 Debug Debug => database
+2022-05-09 22:27:29.0700 Debug Info => database
+2022-05-09 22:27:29.0700 Debug Warn => database
+2022-05-09 22:27:29.0700 Debug Error => database
+2022-05-09 22:27:29.0700 Debug Fatal => database
+2022-05-09 22:27:29.0700 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2022-05-09 22:27:29.0700 Debug Trace => database
+2022-05-09 22:27:29.0700 Debug Debug => database
+2022-05-09 22:27:29.0700 Debug Info => database
+2022-05-09 22:27:29.0700 Debug Warn => database
+2022-05-09 22:27:29.0700 Debug Error => database
+2022-05-09 22:27:29.0700 Debug Fatal => database
+2022-05-09 22:27:29.0700 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2022-05-09 22:27:29.0700 Debug Trace => database
+2022-05-09 22:27:29.0700 Debug Debug => database
+2022-05-09 22:27:29.0700 Debug Info => database
+2022-05-09 22:27:29.0700 Debug Warn => database
+2022-05-09 22:27:29.0700 Debug Error => database
+2022-05-09 22:27:29.0700 Debug Fatal => database
+2022-05-09 22:27:29.0847 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2022-05-09 22:27:29.0847 Debug Trace => database
+2022-05-09 22:27:29.0847 Debug Debug => database
+2022-05-09 22:27:29.0847 Debug Info => database
+2022-05-09 22:27:29.0847 Debug Warn => database
+2022-05-09 22:27:29.0847 Debug Error => database
+2022-05-09 22:27:29.0847 Debug Fatal => database
+2022-05-09 22:27:29.0847 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService by level:
+2022-05-09 22:27:29.0847 Debug Trace => database
+2022-05-09 22:27:29.0847 Debug Debug => database
+2022-05-09 22:27:29.0847 Debug Info => database
+2022-05-09 22:27:29.0847 Debug Warn => database
+2022-05-09 22:27:29.0847 Debug Error => database
+2022-05-09 22:27:29.0847 Debug Fatal => database
+2022-05-09 22:27:29.0847 Debug Targets for Microsoft.AspNetCore.Hosting.Diagnostics by level:
+2022-05-09 22:27:29.0847 Debug Trace => database
+2022-05-09 22:27:29.0847 Debug Debug => database
+2022-05-09 22:27:29.0847 Debug Info => database
+2022-05-09 22:27:29.0847 Debug Warn => database
+2022-05-09 22:27:29.0847 Debug Error => database
+2022-05-09 22:27:29.0847 Debug Fatal => database
+2022-05-09 22:27:29.1070 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2022-05-09 22:27:29.1070 Debug Trace => database
+2022-05-09 22:27:29.1070 Debug Debug => database
+2022-05-09 22:27:29.1070 Debug Info => database
+2022-05-09 22:27:29.1070 Debug Warn => database
+2022-05-09 22:27:29.1070 Debug Error => database
+2022-05-09 22:27:29.1070 Debug Fatal => database
+2022-05-09 22:27:29.1207 Debug Targets for Microsoft.AspNetCore.Routing.EndpointMiddleware by level:
+2022-05-09 22:27:29.1207 Debug Trace => database
+2022-05-09 22:27:29.1207 Debug Debug => database
+2022-05-09 22:27:29.1207 Debug Info => database
+2022-05-09 22:27:29.1207 Debug Warn => database
+2022-05-09 22:27:29.1207 Debug Error => database
+2022-05-09 22:27:29.1207 Debug Fatal => database
+2022-05-09 22:27:29.1207 Debug Targets for Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware by level:
+2022-05-09 22:27:29.1207 Debug Trace => database
+2022-05-09 22:27:29.1207 Debug Debug => database
+2022-05-09 22:27:29.1207 Debug Info => database
+2022-05-09 22:27:29.1207 Debug Warn => database
+2022-05-09 22:27:29.1207 Debug Error => database
+2022-05-09 22:27:29.1207 Debug Fatal => database
+2022-05-09 22:27:29.1207 Debug Targets for Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware by level:
+2022-05-09 22:27:29.1207 Debug Trace => database
+2022-05-09 22:27:29.1207 Debug Debug => database
+2022-05-09 22:27:29.1207 Debug Info => database
+2022-05-09 22:27:29.1207 Debug Warn => database
+2022-05-09 22:27:29.1207 Debug Error => database
+2022-05-09 22:27:29.1207 Debug Fatal => database
+2022-05-09 22:27:29.1207 Debug Targets for Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware by level:
+2022-05-09 22:27:29.1207 Debug Trace => database
+2022-05-09 22:27:29.1316 Debug Debug => database
+2022-05-09 22:27:29.1316 Debug Info => database
+2022-05-09 22:27:29.1316 Debug Warn => database
+2022-05-09 22:27:29.1316 Debug Error => database
+2022-05-09 22:27:29.1316 Debug Fatal => database
+2022-05-09 22:27:29.1316 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
+2022-05-09 22:27:29.1316 Debug Trace => database
+2022-05-09 22:27:29.1316 Debug Debug => database
+2022-05-09 22:27:29.1316 Debug Info => database
+2022-05-09 22:27:29.1316 Debug Warn => database
+2022-05-09 22:27:29.1316 Debug Error => database
+2022-05-09 22:27:29.1316 Debug Fatal => database
+2022-05-09 22:27:29.1316 Debug Targets for Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware by level:
+2022-05-09 22:27:29.1316 Debug Trace => database
+2022-05-09 22:27:29.1316 Debug Debug => database
+2022-05-09 22:27:29.1316 Debug Info => database
+2022-05-09 22:27:29.1316 Debug Warn => database
+2022-05-09 22:27:29.1316 Debug Error => database
+2022-05-09 22:27:29.1316 Debug Fatal => database
+2022-05-09 22:27:29.2145 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
+2022-05-09 22:27:29.2145 Debug Trace => database
+2022-05-09 22:27:29.2145 Debug Debug => database
+2022-05-09 22:27:29.2145 Debug Info => database
+2022-05-09 22:27:29.2145 Debug Warn => database
+2022-05-09 22:27:29.2145 Debug Error => database
+2022-05-09 22:27:29.2145 Debug Fatal => database
+2022-05-09 22:27:29.2500 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2022-05-09 22:27:29.2500 Trace Scanning SimpleLayout ''Data Source=(localdb)\localhost;Database=NLogDatabase;Trusted_Connection=True;''
+2022-05-09 22:27:29.2500 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2022-05-09 22:27:29.2500 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2022-05-09 22:27:29.2500 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:27:29.3597 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:27:29.3679 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:27:29.238' (String)
+2022-05-09 22:27:29.3679 Trace   DatabaseTarget: Parameter: '@msg' = 'Now listening on: https://localhost:7253' (String)
+2022-05-09 22:27:29.3679 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:27:29.3679 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:27:29.3679 Trace   DatabaseTarget: Parameter: '@trace' = 'AsyncMethodBuilderCore.Start => <StartAsync>d__12.MoveNext => GenericWebHostService.StartAsync' (String)
+2022-05-09 22:27:29.3679 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:27:29.3679 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:27:29.3679 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:27:29.3983 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:27:29.3983 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:27:29.3983 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:27:29.3983 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:27:29.3983 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:27:29.398' (String)
+2022-05-09 22:27:29.3983 Trace   DatabaseTarget: Parameter: '@msg' = 'Now listening on: http://localhost:5184' (String)
+2022-05-09 22:27:29.3983 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:27:29.3983 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:27:29.3983 Trace   DatabaseTarget: Parameter: '@trace' = 'AsyncMethodBuilderCore.Start => <StartAsync>d__12.MoveNext => GenericWebHostService.StartAsync' (String)
+2022-05-09 22:27:29.3983 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:27:29.3983 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:27:29.3983 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:27:29.3983 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:27:29.3983 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:27:29.3983 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:27:29.3983 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:27:29.3983 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:27:29.398' (String)
+2022-05-09 22:27:29.3983 Trace   DatabaseTarget: Parameter: '@msg' = 'Application started. Press Ctrl+C to shut down.' (String)
+2022-05-09 22:27:29.3983 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@trace' = 'CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted' (String)
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:27:29.4121 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:27:29.4121 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:27:29.4121 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:27:29.4121 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:27:29.4121 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:27:29.412' (String)
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@msg' = 'Hosting environment: Development' (String)
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@trace' = 'CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted' (String)
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:27:29.4121 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:27:29.4121 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:27:29.4275 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:27:29.4275 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:27:29.4275 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:27:29.4275 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:27:29.4275 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:27:29.427' (String)
+2022-05-09 22:27:29.4275 Trace   DatabaseTarget: Parameter: '@msg' = 'Content root path: C:\GIT\NlogDotnet6\' (String)
+2022-05-09 22:27:29.4275 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:27:29.4275 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:27:29.4275 Trace   DatabaseTarget: Parameter: '@trace' = 'CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted' (String)
+2022-05-09 22:27:29.4275 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:27:29.4275 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:27:29.4275 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:27:29.4275 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:27:29.4275 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:27:55.0729 Debug Targets for Microsoft.AspNetCore.Routing.Matching.DfaMatcher by level:
+2022-05-09 22:27:55.0729 Debug Trace => database
+2022-05-09 22:27:55.0729 Debug Debug => database
+2022-05-09 22:27:55.0729 Debug Info => database
+2022-05-09 22:27:55.0729 Debug Warn => database
+2022-05-09 22:27:55.0729 Debug Error => database
+2022-05-09 22:27:55.0729 Debug Fatal => database
+2022-05-09 22:27:55.0729 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector by level:
+2022-05-09 22:27:55.0729 Debug Trace => database
+2022-05-09 22:27:55.0729 Debug Debug => database
+2022-05-09 22:27:55.0729 Debug Info => database
+2022-05-09 22:27:55.0729 Debug Warn => database
+2022-05-09 22:27:55.0729 Debug Error => database
+2022-05-09 22:27:55.0729 Debug Fatal => database
+2022-05-09 22:27:55.0729 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider by level:
+2022-05-09 22:27:55.0729 Debug Trace => database
+2022-05-09 22:27:55.0729 Debug Debug => database
+2022-05-09 22:27:55.0729 Debug Info => database
+2022-05-09 22:27:55.0729 Debug Warn => database
+2022-05-09 22:27:55.0729 Debug Error => database
+2022-05-09 22:27:55.0729 Debug Fatal => database
+2022-05-09 22:27:55.0977 Debug Targets for NlogDotnet6.Controllers.HomeController by level:
+2022-05-09 22:27:55.0977 Debug Trace => database
+2022-05-09 22:27:55.0977 Debug Debug => database
+2022-05-09 22:27:55.0977 Debug Info => database
+2022-05-09 22:27:55.1000 Debug Warn => database
+2022-05-09 22:27:55.1000 Debug Error => database
+2022-05-09 22:27:55.1000 Debug Fatal => database
+2022-05-09 22:27:55.1000 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:27:55.1000 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:27:55.100' (String)
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@msg' = 'LOG DE INFORMAÇÃO' (String)
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@trace' = 'SyncActionResultExecutor.Execute => <no type>.lambda_method1 => HomeController.Index' (String)
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@logger' = 'NlogDotnet6.Controllers.HomeController' (String)
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@url' = 'https://localhost/' (String)
+2022-05-09 22:27:55.1000 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:27:55.1000 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:27:55.1000 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:27:55.1000 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:27:55.100' (String)
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@msg' = 'LOG DE WARNNING ' (String)
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@level' = 'Warn' (String)
+2022-05-09 22:27:55.1000 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:27:55.1157 Trace   DatabaseTarget: Parameter: '@trace' = 'SyncActionResultExecutor.Execute => <no type>.lambda_method1 => HomeController.Index' (String)
+2022-05-09 22:27:55.1157 Trace   DatabaseTarget: Parameter: '@logger' = 'NlogDotnet6.Controllers.HomeController' (String)
+2022-05-09 22:27:55.1157 Trace   DatabaseTarget: Parameter: '@url' = 'https://localhost/' (String)
+2022-05-09 22:27:55.1157 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:27:55.1157 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:27:55.1157 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:27:55.1157 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:27:55.1157 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:27:55.115' (String)
+2022-05-09 22:27:55.1157 Trace   DatabaseTarget: Parameter: '@msg' = 'LOG DE UM EXCEPTION' (String)
+2022-05-09 22:27:55.1157 Trace   DatabaseTarget: Parameter: '@level' = 'Error' (String)
+2022-05-09 22:27:55.1157 Trace   DatabaseTarget: Parameter: '@exception' = 'Exception of type 'System.Exception' was thrown.' (String)
+2022-05-09 22:27:55.1157 Trace   DatabaseTarget: Parameter: '@trace' = 'SyncActionResultExecutor.Execute => <no type>.lambda_method1 => HomeController.Index' (String)
+2022-05-09 22:27:55.1157 Trace   DatabaseTarget: Parameter: '@logger' = 'NlogDotnet6.Controllers.HomeController' (String)
+2022-05-09 22:27:55.1157 Trace   DatabaseTarget: Parameter: '@url' = 'https://localhost/' (String)
+2022-05-09 22:27:55.1157 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:27:55.1157 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:27:55.1157 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler by level:
+2022-05-09 22:27:55.1157 Debug Trace => database
+2022-05-09 22:27:55.1157 Debug Debug => database
+2022-05-09 22:27:55.1313 Debug Info => database
+2022-05-09 22:27:55.1313 Debug Warn => database
+2022-05-09 22:27:55.1313 Debug Error => database
+2022-05-09 22:27:55.1313 Debug Fatal => database
+2022-05-09 22:27:55.1313 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine by level:
+2022-05-09 22:27:55.1313 Debug Trace => database
+2022-05-09 22:27:55.1313 Debug Debug => database
+2022-05-09 22:27:55.1313 Debug Info => database
+2022-05-09 22:27:55.1313 Debug Warn => database
+2022-05-09 22:27:55.1313 Debug Error => database
+2022-05-09 22:27:55.1313 Debug Fatal => database
+2022-05-09 22:27:55.1313 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor by level:
+2022-05-09 22:27:55.1313 Debug Trace => database
+2022-05-09 22:27:55.1313 Debug Debug => database
+2022-05-09 22:27:55.1313 Debug Info => database
+2022-05-09 22:27:55.1313 Debug Warn => database
+2022-05-09 22:27:55.1313 Debug Error => database
+2022-05-09 22:27:55.1313 Debug Fatal => database
+2022-05-09 22:27:55.1605 Debug Targets for Microsoft.AspNetCore.Routing.DefaultLinkGenerator by level:
+2022-05-09 22:27:55.1605 Debug Trace => database
+2022-05-09 22:27:55.1605 Debug Debug => database
+2022-05-09 22:27:55.1605 Debug Info => database
+2022-05-09 22:27:55.1624 Debug Warn => database
+2022-05-09 22:27:55.1624 Debug Error => database
+2022-05-09 22:27:55.1624 Debug Fatal => database
+2022-05-09 22:27:55.1624 Debug Targets for Microsoft.AspNetCore.Mvc.Routing.EndpointRoutingUrlHelper by level:
+2022-05-09 22:27:55.1624 Debug Trace => database
+2022-05-09 22:27:55.1624 Debug Debug => database
+2022-05-09 22:27:55.1624 Debug Info => database
+2022-05-09 22:27:55.1624 Debug Warn => database
+2022-05-09 22:27:55.1624 Debug Error => database
+2022-05-09 22:27:55.1624 Debug Fatal => database
+2022-05-09 22:27:55.1624 Debug Targets for Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker by level:
+2022-05-09 22:27:55.1624 Debug Trace => database
+2022-05-09 22:27:55.1624 Debug Debug => database
+2022-05-09 22:27:55.1624 Debug Info => database
+2022-05-09 22:27:55.1624 Debug Warn => database
+2022-05-09 22:27:55.1624 Debug Error => database
+2022-05-09 22:27:55.1624 Debug Fatal => database
+2022-05-09 22:27:55.1624 Debug Targets for Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery by level:
+2022-05-09 22:27:55.1624 Debug Trace => database
+2022-05-09 22:27:55.1624 Debug Debug => database
+2022-05-09 22:27:55.1624 Debug Info => database
+2022-05-09 22:27:55.1624 Debug Warn => database
+2022-05-09 22:27:55.1624 Debug Error => database
+2022-05-09 22:27:55.1624 Debug Fatal => database
+2022-05-09 22:27:55.1875 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper by level:
+2022-05-09 22:27:55.1875 Debug Trace => database
+2022-05-09 22:27:55.1875 Debug Debug => database
+2022-05-09 22:27:55.1875 Debug Info => database
+2022-05-09 22:27:55.1875 Debug Warn => database
+2022-05-09 22:27:55.1875 Debug Error => database
+2022-05-09 22:27:55.1875 Debug Fatal => database
+2022-05-09 22:27:55.2037 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper by level:
+2022-05-09 22:27:55.2037 Debug Trace => database
+2022-05-09 22:27:55.2037 Debug Debug => database
+2022-05-09 22:27:55.2037 Debug Info => database
+2022-05-09 22:27:55.2037 Debug Warn => database
+2022-05-09 22:27:55.2037 Debug Error => database
+2022-05-09 22:27:55.2037 Debug Fatal => database
+2022-05-09 22:28:18.3967 Trace DatabaseTarget(Name=database): Open connection.
+2022-05-09 22:28:18.3967 Trace DatabaseTarget(Name=database): Executing Text: 
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            
+2022-05-09 22:28:18.3967 Trace   DatabaseTarget: Parameter: '@datetime' = '2022/05/09 22:28:18.396' (String)
+2022-05-09 22:28:18.3967 Trace   DatabaseTarget: Parameter: '@msg' = 'Application is shutting down...' (String)
+2022-05-09 22:28:18.3967 Trace   DatabaseTarget: Parameter: '@level' = 'Info' (String)
+2022-05-09 22:28:18.3967 Trace   DatabaseTarget: Parameter: '@exception' = '' (String)
+2022-05-09 22:28:18.3967 Trace   DatabaseTarget: Parameter: '@trace' = 'CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_1 => ConsoleLifetime.OnApplicationStopping' (String)
+2022-05-09 22:28:18.3967 Trace   DatabaseTarget: Parameter: '@logger' = 'Microsoft.Hosting.Lifetime' (String)
+2022-05-09 22:28:18.3967 Debug No available HttpContext. Logging outside valid request context?
+2022-05-09 22:28:18.3967 Trace   DatabaseTarget: Parameter: '@url' = '' (String)
+2022-05-09 22:28:18.3967 Trace DatabaseTarget(Name=database): Finished execution, result = 1
+2022-05-09 22:28:18.3967 Trace DatabaseTarget(Name=database): Close connection (KeepConnection = false).
+2022-05-09 22:28:18.4177 Debug LogFactory Flush with timeout=15 secs
+2022-05-09 22:28:18.4177 Trace Flushing all 1 targets...
+2022-05-09 22:28:18.4177 Trace ForEachItemInParallel() 1 items
+2022-05-09 22:28:18.4177 Trace Continuation invoked: 
+2022-05-09 22:28:18.4177 Trace Parallel task completed. 0 items remaining
+2022-05-09 22:28:18.4177 Debug Flush completed
+2022-05-09 22:28:18.4177 Info Shutdown() called. Logger closing...
+2022-05-09 22:28:18.4177 Info Closing old configuration.
+2022-05-09 22:28:18.4177 Debug LogFactory Flush with timeout=15 secs
+2022-05-09 22:28:18.4177 Trace Flushing all 1 targets...
+2022-05-09 22:28:18.4177 Trace ForEachItemInParallel() 1 items
+2022-05-09 22:28:18.4284 Trace Continuation invoked: 
+2022-05-09 22:28:18.4284 Trace Parallel task completed. 0 items remaining
+2022-05-09 22:28:18.4284 Debug Flush completed
+2022-05-09 22:28:18.4284 Debug Closing logging configuration...
+2022-05-09 22:28:18.4284 Trace Closing Database Target[database]
+2022-05-09 22:28:18.4284 Debug Closing target 'Database Target[database]'.
+2022-05-09 22:28:18.4284 Trace DatabaseTarget(Name=database): Close connection because of CloseTarget
+2022-05-09 22:28:18.4284 Debug Closed target 'Database Target[database]'.
+2022-05-09 22:28:18.4284 Trace Closing '
+            INSERT INTO NLog(CreateDate,Message,Level,Exception,StackTrace,Logger,Url)
+             VALUES (@datetime,@msg,@level,@exception,@trace,@logger,@url)
+            '
+2022-05-09 22:28:18.4284 Trace Closing Layout Renderer: ${literal}
+2022-05-09 22:28:18.4284 Trace Closing '${var:connectionString}'
+2022-05-09 22:28:18.4284 Trace Closing Layout Renderer: ${var}
+2022-05-09 22:28:18.4284 Trace Closing '.'
+2022-05-09 22:28:18.4284 Trace Closing Layout Renderer: ${literal}
+2022-05-09 22:28:18.4284 Trace Closing '${date}'
+2022-05-09 22:28:18.4284 Trace Closing Layout Renderer: ${date}
+2022-05-09 22:28:18.4284 Trace Closing '${message}'
+2022-05-09 22:28:18.4284 Trace Closing Layout Renderer: ${message}
+2022-05-09 22:28:18.4284 Trace Closing '${level}'
+2022-05-09 22:28:18.4284 Trace Closing Layout Renderer: ${level}
+2022-05-09 22:28:18.4284 Trace Closing '${exception}'
+2022-05-09 22:28:18.4284 Trace Closing Layout Renderer: ${exception}
+2022-05-09 22:28:18.4284 Trace Closing '${stacktrace}'
+2022-05-09 22:28:18.4284 Trace Closing Layout Renderer: ${stacktrace}
+2022-05-09 22:28:18.4284 Trace Closing '${logger}'
+2022-05-09 22:28:18.4284 Trace Closing Layout Renderer: ${logger}
+2022-05-09 22:28:18.4284 Trace Closing '${aspnet-request-url}'
+2022-05-09 22:28:18.4284 Trace Closing Layout Renderer: ${aspnet-request-url}
+2022-05-09 22:28:18.4284 Debug Finished closing logging configuration.
+2022-05-09 22:28:18.4432 Debug Stopping file watching for path 'C:\GIT\NlogDotnet6\bin\Debug\net6.0' filter 'NLog.config'
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Program
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.Hosting.Lifetime
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: NlogDotnet6
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.BadRequests
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Connections
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Http2
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Http3
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.TypeForwardingActivator
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.Hosting.Diagnostics
+2022-05-09 22:28:18.4432 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointMiddleware
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: NlogDotnet6.Controllers.HomeController
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Routing.EndpointRoutingUrlHelper
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper
+2022-05-09 22:28:18.4597 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper
+2022-05-09 22:28:18.4597 Info Logger has been closed down.
+2022-05-09 22:28:18.4597 Info AppDomain Shutting down. Logger closing...
+2022-05-09 22:28:18.4747 Info Logger has been shut down.
