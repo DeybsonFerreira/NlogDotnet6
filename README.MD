@@ -1,25 +1,24 @@
-1 > Adicionando projeto
-dotnet new mvc
+# NlogDotnet6
+using NLog with .NET6 
+Documentação NLog: https://nlog-project.org/
+Documentação NLog: https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-6
 
-2 > add package
-https://www.nuget.org/packages/NLog.Web.AspNetCore/
-dotnet add package NLog.Web.AspNetCore
+### Adicionando projeto
+```dotnet new mvc```
+
+### Adicionando Pacotes
+https://www.nuget.org/packages/NLog.Web.
+```dotnet add package NLog.Web.AspNetCore```
 
 https://www.nuget.org/packages/System.Data.SqlClient
-dotnet add package System.Data.SqlClient --version 4.8.3
+``` dotnet add package System.Data.SqlClient ```
 
-3 > criar arquivo de configuração NLOG
-NLog.config
-+ info 
-https://nlog-project.org/ (Getting started for ASP.NET Core)
+### criar arquivo de configuração NLOG
+Precisamos criar um arquivo chamado ```NLog.config```
 
-3.1 > alterar path do temp no xml "./log/nlog.txt"
+### SCRIPT no Database
 
-3.2 > Adicionar o target do Database , baseado na query do INSERT DATABASE, e connectionString no appSettings
-
-4> adicionar NLog na classe Program
-
-5> SCRIPT
+```
 CREATE TABLE NLog(
     Id int NOT NULL PRIMARY KEY IDENTITY(1,1),
     CreateDate datetime NOT NULL,
@@ -30,3 +29,4 @@ CREATE TABLE NLog(
     Logger nvarchar(255),
     Url nvarchar(255)
 );
+```
