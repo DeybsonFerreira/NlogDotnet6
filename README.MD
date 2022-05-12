@@ -1,7 +1,16 @@
 # NlogDotnet6
-using NLog with .NET6 
-Documentação NLog: https://nlog-project.org/
-Documentação NLog: https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-6
+
+Confira este repositório em artigo
+https://medium.com/@deybsonferreira/nlog-com-net-6-5793f05de4a7
+
+Confira em vídeo: clique abaixo 📺
+[![Video](https://miro.medium.com/max/1400/1*xcCWailv5ImL2yLKf-7_wA.png)](https://youtu.be/m0X3FHWQf90)
+
+
+
+# using NLog with .NET6 
+Documentação NLog: https://nlog-project.org/ <br>
+Documentação NLog: https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-6 <br>
 
 ### Adicionando projeto
 ```dotnet new mvc```
